@@ -5,7 +5,7 @@ export default function CopyClipboard() {
 
     const [string, setString] = useState('')
     const removeSpace = string.replaceAll(' ', '🤸')
-    const initialText = 'Copy to Clipboard'
+    const initialText = 'Copy text'
     const [buttonText, setButtonText] = useState(initialText)
     const [copy,setCopy] = useCopyToClipboard()
     function handleClick() {
